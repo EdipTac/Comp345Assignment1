@@ -1,12 +1,13 @@
+#pragma once
 #include <string>
-using namespace std;
+
 
 class Pawn{
 public:
 	Pawn();
-	Pawn(string color, string position);
+	Pawn(std::string color, std::string position);
 	
 private:
-	string _color;
-	string _position;
+	std::string _color;
+	std::string _position;
 };

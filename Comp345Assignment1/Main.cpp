@@ -8,20 +8,22 @@
 #include <memory>
 #include <string>
 
-using namespace std;
 
 
-class Main {
+
+int main () {
 
 	
 
 	DeckOfRefs referenceDeck{};
 	
 	DeckofRoles roleCardDeck{};
+	std::string player1name = "Player1";
+	std::cout << player1name;
+	system("pause");
 
-	
-	Player p1("player1", roleCardDeck.drawRoleCard());
+	Player p1(player1name, roleCardDeck.drawRoleCard());
 
-	Player* p2 = new Player("player1", roleCardDeck.drawRoleCard());
-	Player p2;
+	//Player* p2 = new Player(player1name, roleCardDeck.drawRoleCard());
+	//Player p2;
 };

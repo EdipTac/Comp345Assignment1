@@ -1,19 +1,21 @@
+#pragma once
+#include <vector>
 #include <string>
 
-using namespace std;
+
 
 
 class ReferenceCard{
 private:
-	const vector<string> _actions;
-	string _driveFerry;
-	string _directFlight;
-	string _charterFlight;
-	string _shuttleFlight;
-	string _buildResearchStation;
-	string _treatDisease;
-	string _shareKnowledge;
-	string _discoverCure;
+	std::vector <std::string> _actions;
+	std::string _driveFerry;
+	std::string _directFlight;
+	std::string _charterFlight;
+	std::string _shuttleFlight;
+	std::string _buildResearchStation;
+	std::string _treatDisease;
+	std::string _shareKnowledge;
+	std::string _discoverCure;
 public:
 	ReferenceCard();
 	// print the contents of a card --> use string stream

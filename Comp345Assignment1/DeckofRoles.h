@@ -1,9 +1,10 @@
+#pragma once
 #include <string>
 #include <vector>
 #include "RoleCard.h"
 #include <memory>
-using namespace std;
-using uniquerolecard = unique_ptr < RoleCard >;
+
+using uniquerolecard = std::unique_ptr < RoleCard >;
 
 class DeckofRoles{
 public: 
@@ -11,6 +12,6 @@ public:
 	uniquerolecard drawRoleCard();
 
 private:
-	vector < uniquerolecard > deckofRole;
+	std::vector < uniquerolecard > deckofRole;
 	
 };

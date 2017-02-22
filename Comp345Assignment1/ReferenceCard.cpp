@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 
-using namespace std;
+
 
 ReferenceCard::ReferenceCard(){
 	
@@ -10,7 +10,7 @@ ReferenceCard::ReferenceCard(){
 	//vector <string> _actions{ _driveFerry, _directFlight, _charterFlight, _shuttleFlight, _buildResearchStation, _treatDisease, _shareKnowledge, _discoverCure };
 	
 	
-	vector <string> temp;
+	std::vector <std::string> temp;
 	temp.push_back("Drive/Ferry: \nMove to a city connected by a white line to the one you are in.");
 	temp.push_back("Direct Flight: \nDiscard a city card to move to the city named on the card.");
 	temp.push_back("Charter Flight: \nDiscard the city card that MATCHES the city you are in to move to ANY city.");
@@ -30,7 +30,7 @@ ReferenceCard::ReferenceCard(){
 				"COLOR. Move the disease's cure marker to its Cure indicator. \n If no cubes of this color are on the board, this "
 				"disease if now ERADICATED. Flip its cure marker from its VIAL side to its ERADICATED side.");
 
-	vector <string> _actions = temp;
+	std::vector <std::string> _actions = temp;
 
 	/*_driveFerry = "Move to a city connected by a white line to the one you are in.";
 	_directFlight = "Discard a city card to move to the city named on the card.";

@@ -1,15 +1,20 @@
+#pragma once
 #include <string>
 
-using namespace std;
+
 
 
 class RoleCard{
 private:
-	string _role;
-	string _description;
-	string _color;
+	std::string _role;
+	std::string _description;
+	std::string _color;
 public:
 	RoleCard();
-	RoleCard(string role, string description, string color);
+	RoleCard(std::string role, std::string description, std::string color);
+	RoleCard(const RoleCard &something);
+	std::string getRole;
+	std::string getDescrip;
+	std::string getColor;
 	void printRole();
 };

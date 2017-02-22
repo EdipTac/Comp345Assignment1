@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <vector>
 #include "ReferenceCard.h"
@@ -6,18 +7,21 @@
 #include "Pawn.h"
 #include "DeckofRoles.h"
 #include <memory>
-using namespace std;
+
 
 class Player{
 private:
-	string _name;
-	unique_ptr<ReferenceCard> _myReference;
-	RoleCard _myRole;
+	std::string _name;
+	std::unique_ptr<ReferenceCard> _myReference;
+	std::unique_ptr<RoleCard> _myRole; //changed it from RoleCard _myRole;
 	
 public:
 	Player();
-	Player(string name, RoleCard role);
+	//Player(std::string name, RoleCard role);
 	void displayRole();
+	void setName(std::string otherName);
+	void setRoleCard(std::make_unique<RoleCard> role);
+	void setReference();
 	
 
 	//void drawRef(DeckOfRefs deckofReferenceCards); not sure if this is required, can just be done in the constructor of player

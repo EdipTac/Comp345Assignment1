@@ -1,6 +1,5 @@
 #include "Pawn.h"
 
-using namespace std;
 
 
 Pawn::Pawn(){
@@ -8,7 +7,7 @@ Pawn::Pawn(){
 	 _position = "Atlanta";
 }
 
-Pawn::Pawn(string col, string pos){
+Pawn::Pawn(std::string col, std::string pos){
 	_color = col;
 	_position = pos;
 }

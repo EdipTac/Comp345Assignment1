@@ -4,11 +4,11 @@
 #include "RoleCard.h"
 #include "DeckofRefs.h"
 #include <memory>
-using namespace std;
+
 
 DeckOfRefs::DeckOfRefs(){
 	for (int i = 0; i < 3; i++){
-		deckOfRef.push_back(make_unique<ReferenceCard>());
+		deckOfRef.push_back(std::make_unique<ReferenceCard>());
 	}
 }
 

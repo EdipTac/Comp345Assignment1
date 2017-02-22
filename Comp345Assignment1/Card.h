@@ -1,9 +1,11 @@
+#pragma once
 #include <string>
 
-using namespace std;
 
 
-class Card{
+
+class Card {
 protected:
-	string name, description, 
+	std::string name, description,
+
 };
