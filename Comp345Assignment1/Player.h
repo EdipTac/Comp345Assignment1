@@ -17,11 +17,11 @@ private:
 	
 public:
 	Player();
-	//Player(std::string name, RoleCard role);
+	Player(std::string name, std::unique_ptr<RoleCard> role);
 	void displayRole();
 	void setName(std::string otherName);
-	void setRoleCard(std::make_unique<RoleCard> role);
-	void setReference();
+	void setRoleCard(std::unique_ptr<RoleCard> role);
+	void setReference(std::unique_ptr<ReferenceCard> reference);
 	
 
 	//void drawRef(DeckOfRefs deckofReferenceCards); not sure if this is required, can just be done in the constructor of player

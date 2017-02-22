@@ -12,7 +12,7 @@ private:
 public:
 	RoleCard();
 	RoleCard(std::string role, std::string description, std::string color);
-	RoleCard(const RoleCard &something);
+
 	std::string getRole;
 	std::string getDescrip;
 	std::string getColor;
