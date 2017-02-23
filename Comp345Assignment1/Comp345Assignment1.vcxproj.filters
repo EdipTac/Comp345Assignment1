@@ -18,9 +18,6 @@
     <ClInclude Include="Pawn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Card.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="RoleCard.h">
       <Filter>Header Files</Filter>
     </ClInclude>

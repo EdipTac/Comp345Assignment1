@@ -64,7 +64,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Card.h" />
     <ClInclude Include="DeckofRefs.h" />
     <ClInclude Include="DeckofRoles.h" />
     <ClInclude Include="Pawn.h" />
